@@ -25,12 +25,14 @@ body {
     display: flex;
     overflow: hidden;
     z-index: 1;
+    background: url('https://i0.wp.com/catagua.com.br/wp-content/uploads/2022/12/adobestock-645038093.jpeg?fit=1024%2C771&ssl=1') no-repeat center center;
+    background-size: cover;
 }
 
 #left-curtain, #right-curtain {
     width: 50%;
     height: 100%;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.7); /* Mantém um overlay vermelho com transparência */
 }
 
 #left-curtain {
@@ -72,6 +74,14 @@ body {
     z-index: 2;
 }
 
+#message p {
+    text-align: justify; /* Justifica o texto dos parágrafos */
+}
+
+#message h1, #message h2 {
+    text-align: center; /* Centraliza os títulos */
+}
+
 #message img {
     max-width: 100%;
     height: auto;
@@ -91,8 +101,8 @@ h2 {
 }
 
 .carousel-inner img {
-    max-height: 400px; /* Reduz a altura das imagens */
-    object-fit: cover; /* Mantém a proporção das imagens */
+    max-height: 500px; /* Aumentei a altura das imagens */
+    object-fit: cover;
 }
 
 @media (max-width: 600px) {
