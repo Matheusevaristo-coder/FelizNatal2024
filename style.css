@@ -115,3 +115,15 @@ h2 {
         height: 30px;
     }
 }
+#click-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ffffff; /* Cor branca */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente */
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2; /* Garante que o texto fique acima das cortinas */
+    position: relative;
+}
+
