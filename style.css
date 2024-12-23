@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffefd5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+#curtain-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#left-curtain, #right-curtain {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+#left-curtain {
+    transform: translateX(0);
+    transition: transform 2s ease-in-out;
+}
+
+#right-curtain {
+    transform: translateX(0);
+    transition: transform 2s ease-in-out;
+}
+
+.open #left-curtain {
+    transform: translateX(-100%);
+}
+
+.open #right-curtain {
+    transform: translateX(100%);
+}
+
+#christmas-ball {
+    font-size: 2em;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+#message {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+#message img {
+    max-width: 100%;
+    height: auto;
+}
+
+#social-media {
+    margin-top: 20px;
+}
+
+#social-media a img {
+    width: 40px;
+    height: 40px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+.carousel-inner img {
+    max-height: 400px; /* Reduz a altura das imagens */
+    object-fit: cover; /* Mantém a proporção das imagens */
+}
+
+@media (max-width: 600px) {
+    #christmas-ball {
+        font-size: 1.5em;
+    }
+
+    #social-media a img {
+        width: 30px;
+        height: 30px;
+    }
+}
